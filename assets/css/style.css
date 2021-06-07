@@ -1,29 +1,35 @@
+/* Remove default padding and margin of website and the default behaviour of html box model. */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/* Set background colour of website to an off-white. */
 body {
     background-color: #d9dcd6;
 }
-
+/* Set padding for header element,
+set fonts and backup fonts,
+set background colour to a blue and text color to white. */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-
+/* change display of h1 elements inside header to inline-block,
+set font-size to 48px */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/* change text colour to text inside span with class 'seo' inside the h1 */
 header h1 .seo {
     color: #d9dcd6;
 }
-
+/* Set padding and margin for nav element inside header,
+set float to right so position nav element on right of screen,
+set fonts and back up fonts, and font size to 20px. */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -31,42 +37,42 @@ header nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
+/* remove default styling of unordered list, to remove the bullet point */
 header nav ul {
     list-style-type: none;
 }
-
+/* change display to inline-block so list items display on the same line,
+added margin so list items are spaced out. */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* change text colour of links to the same as other text on page, 
+remove default underline styling*/
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
+/* set font size of paragraph elements to 16px */
 p {
     font-size: 16px;
 }
-
+/* set width to 100% so image fills the page horizontally,
+set height to 800px, set object-fit and object-position so the image isn't squashed by the restricted height,
+give a margin to space the image from content below */
 .hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
     object-fit: cover;
     object-position: center;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
-    display: block;
 }
-
+/* class to apply to images to position to the left of content */
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
+/* class to apply to images to position to the right of content */
 .float-right {
     float: right;
     margin-left: 25px;
