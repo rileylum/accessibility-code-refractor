@@ -42,6 +42,12 @@ The completed website can be viewed at: insert github pages link
 
 Original code provided by Adelaide University and Trilogy Coding Bootcamp.
 
+I found the following website useful for reference:
+
+https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines
+https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML
+https://learn-the-web.algonquindesign.ca/topics/html-semantics-cheat-sheet/
+
 ## License
 
 
