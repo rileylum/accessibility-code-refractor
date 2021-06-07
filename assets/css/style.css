@@ -77,14 +77,37 @@ give a margin to space the image from content below */
     float: right;
     margin-left: 25px;
 }
-
-.content {
+/* set width of main content to 75% to give room for the aside,
+apply a margin to create space from side of page */
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
+/* set margin, padding to give space around each section in main,
+set height to 300px for each section in main,
+set font and backup fonts for each section in main,
+set background colour to blue and the text colour to white for each section in main */
+main section {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff
+}
+/* set max height for each image in main sections to 200px */
+main section img {
+    max-height: 200px;
+}
+/* add a margin to give space between h2 and other elements in main sections
+set font size to 36px */
+main section h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
 
-.benefits {
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -95,109 +118,21 @@ give a margin to space the image from content below */
     background-color: #2589bd;
 }
 
-.benefit-lead {
+aside section {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h2 {
+aside section h2 {
     font-size: 19px;
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h2 {
-    font-size: 19px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h2 {
-    font-size: 19px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+aside section img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
 }
 
 footer {
