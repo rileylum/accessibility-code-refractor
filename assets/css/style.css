@@ -79,7 +79,7 @@ give a margin to space the image from content below */
 }
 /* set width of main content to 75% to give room for the aside,
 apply a margin to create space from side of page */
-main {
+.content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
@@ -88,7 +88,7 @@ main {
 set height to 300px for each section in main,
 set font and backup fonts for each section in main,
 set background colour to blue and the text colour to white for each section in main */
-main section {
+.content section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -97,17 +97,21 @@ main section {
     color: #ffffff
 }
 /* set max height for each image in main sections to 200px */
-main section img {
+.content section img {
     max-height: 200px;
 }
 /* add a margin to give space between h2 and other elements in main sections
 set font size to 36px */
-main section h2 {
+.content section h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
-aside {
+/* set margin and padding to give space around the aside element
+float right to position to the right of main content,
+set width to 20% and height to 100%,
+set font and backup fonts,
+set background colour to light blue */
+.benefits {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -117,31 +121,38 @@ aside {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
-aside section {
+/* add margin to each section in benefits class to give space between each,
+set text colour to white. */
+.benefits section {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
-aside section h2 {
+/* set fontsize to 19px,
+add margin to give space between h2 and elements below
+align h2 to center */
+.benefits section h2 {
     font-size: 19px;
     margin-bottom: 10px;
     text-align: center;
 }
-
-aside section img {
+/* set images to take their own line with display: block
+create space around image with margin: 10px above and below, and equal space to each side
+set maximum width of image to 150px */
+.benefits section img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
+/* create space between internal elements and edge of footer element using padding
+set font and default fonts
+align all text in footer */
 footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
+/* set font size for h2 elements in footer to 20px */
 footer h2 {
     font-size: 20px;
 }
