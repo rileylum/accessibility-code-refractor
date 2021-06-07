@@ -35,7 +35,7 @@ Here is a screenshot of the completed website. Whilst this is no different from 
 
 ## Usage
 
-The completed website can be viewed at: insert github pages link
+The completed website can be viewed at: https://rileylum.github.io/accessibility-code-refractor/index.html
 
 ## Credits
 
