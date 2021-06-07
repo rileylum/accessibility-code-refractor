@@ -29,6 +29,9 @@ THEN they fall in sequential order
 WHEN I view the title element
 THEN I find a concise, descriptive title
 ```
+Here is a screenshot of the completed website. Whilst this is no different from the original the page will be much easier to use on a screen reader:
+
+![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](./assets/images/accessibility-code-refractor-screengrab.png)
 
 ## Installation
 
