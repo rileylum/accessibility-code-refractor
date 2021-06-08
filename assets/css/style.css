@@ -1,35 +1,41 @@
-/* Remove default padding and margin of website and the default behaviour of html box model. */
+/* ALL CONTENT */
+/* remove default padding and margin,
+change box-model to border-box */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-/* Set background colour of website to an off-white. */
+/* Set background color of website to offwhite */
 body {
     background-color: #d9dcd6;
 }
-/* Set padding for header element,
-set fonts and backup fonts,
-set background colour to a blue and text color to white. */
+/* remove default styling for links */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+/* HEADER SECTION includes a h1 tag and nav element */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-/* change display of h1 elements inside header to inline-block,
-set font-size to 48px */
+
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
-/* change text colour to text inside span with class 'seo' inside the h1 */
+
 header h1 .seo {
     color: #d9dcd6;
 }
-/* Set padding and margin for nav element inside header,
-set float to right so position nav element on right of screen,
-set fonts and back up fonts, and font size to 20px. */
+
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -41,25 +47,14 @@ header nav {
 header nav ul {
     list-style-type: none;
 }
-/* change display to inline-block so list items display on the same line,
-added margin so list items are spaced out. */
+/* put list items on same line using inline-block */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-/* change text colour of links to the same as other text on page, 
-remove default underline styling*/
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-/* set font size of paragraph elements to 16px */
-p {
-    font-size: 16px;
-}
-/* set width to 100% so image fills the page horizontally,
-set height to 800px, set object-fit and object-position so the image isn't squashed by the restricted height,
-give a margin to space the image from content below */
+
+/* HERO IMAGE
+change positioning behaviour so image isn't squashed vertically and is centered */
 .hero {
     height: 800px;
     width: 100%;
@@ -67,27 +62,23 @@ give a margin to space the image from content below */
     object-fit: cover;
     object-position: center;
 }
-/* class to apply to images to position to the left of content */
+/* class to applies to images to position to the left of content */
 .float-left {
     float: left;
     margin-right: 25px;
 }
-/* class to apply to images to position to the right of content */
+/* class to applies to images to position to the right of content */
 .float-right {
     float: right;
     margin-left: 25px;
 }
-/* set width of main content to 75% to give room for the aside,
-apply a margin to create space from side of page */
+/* MAIN CONTENT - includes 3 sections with images and text inside */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
-/* set margin, padding to give space around each section in main,
-set height to 300px for each section in main,
-set font and backup fonts for each section in main,
-set background colour to blue and the text colour to white for each section in main */
+
 .content section {
     margin-bottom: 20px;
     padding: 50px;
@@ -96,21 +87,16 @@ set background colour to blue and the text colour to white for each section in m
     background-color: #0072bb;
     color: #ffffff
 }
-/* set max height for each image in main sections to 200px */
+
 .content section img {
     max-height: 200px;
 }
-/* add a margin to give space between h2 and other elements in main sections
-set font size to 36px */
+
 .content section h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-/* set margin and padding to give space around the aside element
-float right to position to the right of main content,
-set width to 20% and height to 100%,
-set font and backup fonts,
-set background colour to light blue */
+/* ASIDE COLUMN - contains 3 sections in a bar displayed to the right of main content */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -121,31 +107,24 @@ set background colour to light blue */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-/* add margin to each section in benefits class to give space between each,
-set text colour to white. */
+
 .benefits section {
     margin-bottom: 32px;
     color: #ffffff;
 }
-/* set fontsize to 19px,
-add margin to give space between h2 and elements below
-align h2 to center */
+
 .benefits section h2 {
     font-size: 19px;
     margin-bottom: 10px;
     text-align: center;
 }
-/* set images to take their own line with display: block
-create space around image with margin: 10px above and below, and equal space to each side
-set maximum width of image to 150px */
+
 .benefits section img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-/* create space between internal elements and edge of footer element using padding
-set font and default fonts
-align all text in footer */
+/* FOOTER - contains copyright details */
 footer {
     padding: 30px;
     clear: both;
